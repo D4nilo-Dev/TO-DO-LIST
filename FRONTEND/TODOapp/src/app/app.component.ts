@@ -16,7 +16,7 @@ export class AppComponent {
   apiURL : string;
 
 constructor(private http: HttpClient) {
-  this.apiURL = 'https://todolist-2-vg9e.onrender.com';
+  this.apiURL = 'hhttps://to-do-list-hnwv.onrender.com';
 this.READ_tarefas();
 }
 
