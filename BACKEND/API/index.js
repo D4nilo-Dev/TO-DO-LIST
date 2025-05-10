@@ -14,11 +14,7 @@ const PORT = process.env.PORT || 3000;
 
 const dbURI = "mongodb+srv://Vinicius242264:viny22072002@vinicius242264.vaf9iwr.mongodb.net/TarefasDB?retryWrites=true&w=majority&appName=Vinicius242264";
 
-mongoose.connect(dbURI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  });
-  
+mongoose.connect(dbURI); // Removido useNewUrlParser e useUnifiedTopology
 
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'Erro na conexão com o MongoDB:'));
